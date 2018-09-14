@@ -1354,7 +1354,9 @@ border-bottom-right-radius: 6%;
     line-height: 14px;
     text-align: left;
 }
-    
+  #language_buttons a:last-child {
+	  border-radius: 0 0 2px 2px;
+}
     
     
     
