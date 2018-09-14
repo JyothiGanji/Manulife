@@ -1330,7 +1330,7 @@ border-bottom-right-radius: 6%;
     width: 110px;
     overflow: hidden;
     padding-top: 18px;
-    background: url(images/language-selector-bg.png) no-repeat;
+    background: url("../images/language-selector-bg.png") no-repeat;
    
     border-radius: 2px;
 }
