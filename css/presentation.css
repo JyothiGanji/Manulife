@@ -1331,7 +1331,6 @@ border-bottom-right-radius: 6%;
     overflow: hidden;
     padding-top: 18px;
     background: url("../images/language-selector-bg.png") no-repeat;
-   
     border-radius: 2px;
 }
 #language_buttons a.active-language{
@@ -1356,6 +1355,7 @@ border-bottom-right-radius: 6%;
 }
   #language_buttons a:last-child {
 	  border-radius: 0 0 2px 2px;
+	  
 }
     
     
