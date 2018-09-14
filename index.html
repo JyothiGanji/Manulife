@@ -71,30 +71,7 @@
                 document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
             }
         })();
-        $( "#language_buttons a" ).each( function() {
-				$( this ).click( function( e ) {
-					e.preventDefault();
-
-					if ( $( this ).hasClass( "active-language" ) ) {
-						var languageBtns = $( "#language_buttons" );
-						var height = languageBtns.toggleClass( "language_buttons_open" ).hasClass( "language_buttons_open" ) ?
-								( ( languageBtns.children( "a" ).length - 1 ) * 20 ) : 0;
-
-						if ( Modernizr.touch ) {
-							languageBtns.css( "height", height );
-						}
-						else {
-							languageBtns.stop().animate( { height: height }, 500 );
-						}
-					}
-					else {
-						var href = $( this ).attr( "href" );
-						rtc.utils.track( "language.change", { data: $( this ).attr( "id" ).replace( /language\-/, "" ) }, function() {
-							window.location = href;
-						} );
-					}
-				} );
-			} );
+       
     </script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -388,6 +365,32 @@
     <script src="js/modernizr-custom.js"></script>
     <script src="js/settings.js"></script>
     <script src="js/landing-page.js"></script>
+    <script>
+	     $( "#language_buttons a" ).each( function() {
+				$( this ).click( function( e ) {
+					e.preventDefault();
+
+					if ( $( this ).hasClass( "active-language" ) ) {
+						var languageBtns = $( "#language_buttons" );
+						var height = languageBtns.toggleClass( "language_buttons_open" ).hasClass( "language_buttons_open" ) ?
+								( ( languageBtns.children( "a" ).length - 1 ) * 20 ) : 0;
+
+						if ( Modernizr.touch ) {
+							languageBtns.css( "height", height );
+						}
+						else {
+							languageBtns.stop().animate( { height: height }, 500 );
+						}
+					}
+					else {
+						var href = $( this ).attr( "href" );
+						rtc.utils.track( "language.change", { data: $( this ).attr( "id" ).replace( /language\-/, "" ) }, function() {
+							window.location = href;
+						} );
+					}
+				} );
+			} );
+	</script>
 
     <!--
         Uncomment the section below and update the "gaTrackingCode" variable to enable google analytics.
