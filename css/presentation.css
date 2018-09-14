@@ -1324,18 +1324,14 @@ border-bottom-right-radius: 6%;
     }
 }
     .language_buttons_open{
-        position: absolute;
-    top: 9px;
+    position: absolute;
     right: 80px;
     margin: 0px 12px;
     width: 110px;
-    height: 0px;
     overflow: hidden;
     padding-top: 18px;
-    background: url("../images/language-selector-bg.png") no-repeat;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    -khtml-border-radius: 2px;
+    background: url(images/language-selector-bg.png) no-repeat;
+   
     border-radius: 2px;
 }
 #language_buttons a.active-language{
